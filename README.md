@@ -1,4 +1,4 @@
-# TweenPerformance
+# Tween Performance
  Performance comparison of Unity tween libraries
 
 This repository measures the performance of tween libraries published on Github, Asset Store, etc. using the [Performance Testing API](https://docs.unity3d.com/Packages/com.unity.test-framework.performance@3.0/manual/index.html), and includes the results and the source code used.
