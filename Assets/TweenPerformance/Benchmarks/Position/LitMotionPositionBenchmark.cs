@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using LitMotion;
+using LitMotion.Adapters;
 using LitMotion.Extensions;
 
 namespace TweenPerformance
@@ -16,7 +17,7 @@ namespace TweenPerformance
 
         public IEnumerator Setup()
         {
-            MotionDispatcher.EnsureStorageCapacity<Vector3, NoOptions>(transforms.Length);
+            MotionDispatcher.EnsureStorageCapacity<Vector3, NoOptions, Vector3MotionAdapter>(transforms.Length);
             yield break;
         }
 
