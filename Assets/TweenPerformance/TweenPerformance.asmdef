@@ -1,0 +1,46 @@
+{
+    "name": "TweenPerformance",
+    "rootNamespace": "TweenPerformance",
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "Unity.PerformanceTesting",
+        "Unity.Mathematics",
+        "Unity.Collections",
+        "Unity.Entities",
+        "UniTask",
+        "UniRx",
+        "AnimeRx",
+        "AnimeTask",
+        "AnimeTask.Extensions",
+        "GoKit",
+        "GoKitLite",
+        "AuraTween",
+        "PrimeTween.Runtime",
+        "ZestKit",
+        "Uween.Runtime",
+        "UrMotion.Runtime",
+        "Aya.Tween",
+        "nl.jeffreylanters.tweens",
+        "MagicTween",
+        "LitMotion",
+        "LitMotion.Extensions",
+        "LeanTween",
+        "iTween",
+        "FastTweener"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "DOTween.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

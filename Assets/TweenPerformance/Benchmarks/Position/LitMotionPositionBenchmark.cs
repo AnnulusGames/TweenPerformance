@@ -1,0 +1,36 @@
+using System.Collections;
+using UnityEngine;
+using LitMotion;
+using LitMotion.Extensions;
+
+namespace TweenPerformance
+{
+    public class LitMotionPositionBenchmark : IBenchmark
+    {
+        public LitMotionPositionBenchmark(Transform[] transforms)
+        {
+            this.transforms = transforms;
+        }
+
+        readonly Transform[] transforms;
+
+        public IEnumerator Setup()
+        {
+            MotionDispatcher.EnsureStorageCapacity<Vector3, NoOptions>(transforms.Length);
+            yield break;
+        }
+
+        public void TearDown()
+        {
+            UnityEngine.Object.Destroy(GameObject.Find("MotionDispatcher"));
+        }
+
+        public void Run()
+        {
+            foreach (var transform in transforms)
+            {
+                LMotion.Create(Vector3.zero, Vector3.one, 100f).BindToPosition(transform);
+            }
+        }
+    }
+}
