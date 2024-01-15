@@ -2,7 +2,7 @@
 
 This repository measures the performance of tween libraries published on Github, Asset Store, etc. using the [Performance Testing API](https://docs.unity3d.com/Packages/com.unity.test-framework.performance@3.0/manual/index.html), and includes the results and the source code used.
 
-> **Note**
+> [!Note]
 > This repository does not contain the actual library source code, as it contains libraries that are not allowed to be redistributed. If you want to test yourself, please manually add the libraries required for testing.
 
 ## Testing Environment
@@ -39,7 +39,7 @@ Also, details regarding machines and versions are below.
 
 ## Tween 64,000 float tweens
 
-> **Note**
+> [!Note]
 > Libraries that do not support tweening of custom properties are excluded from the benchmark.
 
 ### Startup
