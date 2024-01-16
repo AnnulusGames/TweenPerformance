@@ -34,7 +34,7 @@ namespace TweenPerformance
 
         public void TearDown()
         {
-            UnityEngine.Object.Destroy(GameObject.Find("MotionDispatcher"));
+            MotionDispatcher.Clear();
         }
     }
 }
